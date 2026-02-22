@@ -47,9 +47,9 @@ impl DeviceInfo {
         if devices_with_name.is_empty() {
             bail!(
                 "No device found with name `{}`\
-                    This can happen with multiple devices with the same name.
-                    if this is the case please use 'phys=\"{}\"' to disambiguate \
-                    Of you're unsure of the physical port use 'evremap list-devices'", name);
+                    This can happen with multiple devices with the same name. \
+                    If this is the case please use 'phys=\"{}\"' to disambiguate. \
+                    If you're unsure of the physical port use 'evremap list-devices'", name);
         }
 
         if devices_with_name.len() > 1 {
